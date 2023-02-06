@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(189, 41%, 97%)
+}
+
+.container {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+}
