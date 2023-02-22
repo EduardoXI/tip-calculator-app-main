@@ -10,47 +10,41 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body> 
-  <h1 class="title">Splitter</h1>
-  <div class="container"> 
-    <main>
+<body>
+  <div class="logo"><img src="images/logo.svg" alt="" /></div>
+  <div class="container">
+    <div class="data">
+      <label for="">Bill</label>
+      <input type="number" name="" id="" class="input bill-input">
+      <label for="">Select Tip %</label>
+      <div class="tip">
+        <div class="tips">5%</div>
+        <div class="tips">10%</div>
+        <div class="tips">15%</div>
+        <div class="tips">25%</div>
+        <div class="tips">50%</div>
+        <div id="custom"><input type="number" class="custom" placeholder="CUSTOM"></div>
+      </div>
+      <div class="number-of-people">
+        <label for="">Number of People</label>
+        <input type="number" name="" id="people-input">
+      </div>
+    </div>
+    <div class="result">
       <div>
-        <h3>Bill</h3>
-        <input type="number" name="" id="">
+        <p>Tip Amount</p>
+        <p class="person">/ person</p>
+        <div class="amount"></div>
       </div>
-      <div class="percentual-selection">
-        <h3>Select Tip %</h3>
-        <ul>
-          <li><button>5%</button></li>
-          <li><button>10%</button></li>
-          <li><button>15%</button></li>
-          <li><button>25%</button></li>
-          <li><button>50%</button></li>
-          <li><button>Custom</button></li>
-        </ul>
+      <div>
+        <p>Total</p>
+        <p class="person">/ person</p>
+        <div class="amount"></div>
       </div>
-      <div class="number-people">
-        <h3>Number of People</h3>
-        <input type="number" name="" id="">
-      </div>     
-    </main>
-    <section>
-      <div class="tip-amount">
-        Tip Amount
-        / person
-        
-      </div>
-      <div class="total">
-        Total
-        / person
-
-      </div>
-      <div class="reset">
-        <button>Reset</button>
-      </div>
-    </section>
+      <div class="reset" id="reset">RESET</div>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
